@@ -1,5 +1,5 @@
-import type { Config as BaseConfig } from "prettier";
 import type { PluginConfig as SortConfig } from "@trivago/prettier-plugin-sort-imports";
+import type { Config as BaseConfig } from "prettier";
 
 type Config = BaseConfig & SortConfig;
 
@@ -9,12 +9,25 @@ const config: Config = {
     tabWidth: 4,
     quoteProps: "consistent",
     trailingComma: "all",
-    importOrder: ["^node:", "<THIRD_PARTY_MODULES>", "^@reactivated$", "^@reactivated/(.*)$", "^@thelabnyc/(.*)$", "^[./]"],
+    importOrder: [
+        "^node:",
+        "<THIRD_PARTY_MODULES>",
+        "^@reactivated$",
+        "^@reactivated/(.*)$",
+        "^@thelabnyc/(.*)$",
+        "^[./]",
+    ],
     importOrderSeparation: true,
     importOrderSortSpecifiers: true,
     overrides: [
         {
-            files: ["*.yml", "*.yaml", "package.json", "yarn.lock", "package-lock.json"],
+            files: [
+                "*.yml",
+                "*.yaml",
+                "package.json",
+                "yarn.lock",
+                "package-lock.json",
+            ],
             options: {
                 tabWidth: 2,
             },

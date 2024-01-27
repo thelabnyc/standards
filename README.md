@@ -30,7 +30,7 @@ Example `prettier.config.js`:
 ```js
 const base = require("@thelabnyc/standards/prettier.config");
 module.exports = {
-  ...base,
+    ...base,
 };
 ```
 
@@ -44,6 +44,6 @@ Example `.stylelintrc.json`:
 
 ```json
 {
-  "extends": "@thelabnyc/standards/stylelint.config"
+    "extends": "@thelabnyc/standards/stylelint.config"
 }
 ```
