@@ -2,9 +2,6 @@
   "name": "@thelabnyc/standards",
   "version": "0.0.1",
   "description": "Standardization utilities for thelabnyc projects",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "tsc",
     "prepack": "npm run build"
