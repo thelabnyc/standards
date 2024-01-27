@@ -1,0 +1,29 @@
+{
+  "name": "@thelabnyc/standards",
+  "version": "0.0.1",
+  "description": "Standardization utilities for thelabnyc projects",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build"
+  },
+  "author": "thelabdev <thelabdev@thelabnyc.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/thelabnyc/standards"
+  },
+  "homepage": "https://gitlab.com/thelabnyc/standards",
+  "license": "ISC",
+  "dependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "prettier": "~3.1.0",
+    "stylelint": "^16.2.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.7",
+    "typescript": "^5.3.3"
+  }
+}
