@@ -15,9 +15,19 @@ npm i --save-dev '@thelabnyc/standards'
 
 Docs: [EditorConfig](https://editorconfig.org/)
 
-Symlink the .editorconfig file to the root of your project and use the appropriate extension for your editor:
+Symlink the .editorconfig file to the root of your project.
 
-`ln -s ./node_modules/@thelabnyc/standards/.editorconfig .editorconfig`
+```bash
+ln -s ./node_modules/@thelabnyc/standards/.editorconfig .editorconfig
+```
+
+### Markdownlint
+
+Symlink the .markdownlint.json file to the root of your project.
+
+```bash
+ln -s ./node_modules/@thelabnyc/standards/.markdownlint.json .markdownlint.json
+```
 
 ### Prettier
 
