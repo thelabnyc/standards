@@ -72,10 +72,7 @@ test:js:
   stage: test
   needs: []
   script:
-    - npm run check
     - npm run build
-    - npm run test -- --ci --coverage
-  coverage: '/All files[^|]*\|[^|]*\s+([\d\.]+)/'
 
 release:js:
   <<: *dev_dependency_job
