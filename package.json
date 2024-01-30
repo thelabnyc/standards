@@ -15,8 +15,10 @@
   "license": "ISC",
   "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "postcss-scss": "^4.0.9",
     "prettier": "~3.1.0",
-    "stylelint": "^16.2.0"
+    "stylelint": "^16.2.0",
+    "stylelint-scss": "^6.1.0"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.2",
