@@ -10,12 +10,20 @@ const config: Config = {
     quoteProps: "consistent",
     trailingComma: "all",
     importOrder: [
+        // Sort node built-ins to the top
         "^node:",
+        // Next is any third-party modules, like React.
         "<THIRD_PARTY_MODULES>",
+        // @reactivated namespace
         "^@reactivated$",
         "^@reactivated/(.*)$",
+        // @thelabnyc namespace
         "^@thelabnyc/(.*)$",
-        "^[./]",
+        // All repo-local files EXCEPT for stylesheets
+        "^[./]+(?!.*(.s?css))",
+        // Lastly, styles.
+        "^[./](.*)\\.module\\.s?css$",
+        "^[./](.*)\\.s?css$",
     ],
     importOrderSeparation: true,
     importOrderSortSpecifiers: true,
