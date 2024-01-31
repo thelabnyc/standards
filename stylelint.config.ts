@@ -8,6 +8,7 @@ const config: Config = {
         "media-feature-range-notation": null,
         "no-descending-specificity": null,
         "value-keyword-case": null,
+        "selector-class-pattern": null,
         // Custom Rules
         "thelabnyc/no-composing-sass": true,
     },
