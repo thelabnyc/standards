@@ -7,12 +7,6 @@ const config: Config = {
         // Built-in rule tweaks
         "media-feature-range-notation": null,
         "no-descending-specificity": null,
-        "selector-class-pattern": [
-            "^[a-z][a-zA-Z0-9]+$",
-            {
-                message: "Expected custom property name to be camelCase",
-            },
-        ],
         "value-keyword-case": null,
         // Custom Rules
         "thelabnyc/no-composing-sass": true,
