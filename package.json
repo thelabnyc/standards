@@ -13,6 +13,9 @@
   },
   "homepage": "https://gitlab.com/thelabnyc/standards",
   "license": "ISC",
+  "bin": {
+    "install-thelab-standards": "./bin/install.sh"
+  },
   "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "markdownlint-cli": "^0.39.0",

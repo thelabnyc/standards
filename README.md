@@ -2,12 +2,33 @@
 
 This repository contains standard config files for use by our projects.
 
-## Usage
+## Automatic Setup
 
-### Install Package
+Config NPM to route the `@thelabnyc` scope to Gitlab:
 
 ```bash
 echo '@thelabnyc:registry=https://gitlab.com/api/v4/groups/269576/-/packages/npm/' >> .npmrc
+```
+
+Run install script. For details of what this script does, see [bin/install.sh](bin/install.sh).
+
+```bash
+npx --package='@thelabnyc/standards' install-thelab-standards
+```
+
+## Manual Setup
+
+### Install Package
+
+Config NPM to route the `@thelabnyc` scope to Gitlab:
+
+```bash
+echo '@thelabnyc:registry=https://gitlab.com/api/v4/groups/269576/-/packages/npm/' >> .npmrc
+```
+
+Install package:
+
+```bash
 npm i --save-dev '@thelabnyc/standards'
 ```
 
