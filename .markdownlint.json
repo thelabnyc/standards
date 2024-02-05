@@ -2,6 +2,7 @@
     "code-block-style": false,
     "line-length": false,
     "list-marker-space": false,
+    "no-alt-text": false,
     "no-inline-html": {
         "allowed_elements": [
             "dl",
@@ -11,7 +12,9 @@
             "figcaption",
             "style",
             "strike",
-            "br"
+            "br",
+            "img",
+            "video"
         ]
     },
     "ul-indent": {
