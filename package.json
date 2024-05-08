@@ -6,7 +6,7 @@
     "build": "tsc",
     "prepack": "npm run build"
   },
-  "author": "thelabdev <thelabdev@thelabnyc.com>",
+  "author": "thelab <thelabdev@thelab.co>",
   "repository": {
     "type": "git",
     "url": "git+https://gitlab.com/thelabnyc/standards"
