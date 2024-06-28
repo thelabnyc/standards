@@ -42,6 +42,20 @@ Symlink the .editorconfig file to the root of your project.
 ln -s ./node_modules/@thelabnyc/standards/.editorconfig .editorconfig
 ```
 
+### ESLint
+
+Docs: [ESLint](https://eslint.org/)
+
+Add an ESLint config file that extends `@thelabnyc/standards/eslintrc.js`.
+
+Example `.eslintrc.json`:
+
+```json
+{
+    "extends": ["./node_modules/@thelabnyc/standards/eslintrc.js"]
+}
+```
+
 ### Markdownlint
 
 Symlink the .markdownlint.json file to the root of your project.
