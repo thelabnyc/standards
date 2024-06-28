@@ -4,6 +4,7 @@
   "description": "Standardization utilities for thelabnyc projects",
   "scripts": {
     "build": "tsc",
+    "lint": "eslint -c .eslintrc.json --ext .ts --ext .tsx .",
     "prepack": "npm run build"
   },
   "author": "thelab <thelabdev@thelab.co>",
@@ -18,6 +19,15 @@
   },
   "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-unused-imports": "^3.2.0",
     "markdownlint-cli": "^0.41.0",
     "postcss-scss": "^4.0.9",
     "prettier": "~3.3.2",

@@ -25,6 +25,14 @@ module.exports = {
 };
 EOF
 
+# Setup ESLint
+cat > ".eslintrc.json"<< EOF
+{
+    "extends": ["./node_modules/@thelabnyc/standards/eslintrc.js"]
+}
+EOF
+
+
 # Setup Stylelint
 cat > ".stylelintrc.json"<< EOF
 {
