@@ -48,7 +48,13 @@ export = {
 
         // Typescript overrides from recommended
         "unused-imports/no-unused-imports": "error",
-        "unused-imports/no-unused-vars": "error",
+        "unused-imports/no-unused-vars": [
+            "error",
+            {
+                argsIgnorePattern: "^_",
+                ignoreRestSiblings: true,
+            },
+        ],
         "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/no-non-null-assertion": "off",
