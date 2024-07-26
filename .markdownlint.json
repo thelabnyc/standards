@@ -3,6 +3,7 @@
     "line-length": false,
     "list-marker-space": false,
     "no-alt-text": false,
+    "no-duplicate-heading": false,
     "no-inline-html": {
         "allowed_elements": [
             "dl",
