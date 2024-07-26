@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -euxo pipefail
 
 # Make sure we're in the right directory.
 if [ ! -f "./package.json" ]; then
