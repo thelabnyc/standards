@@ -19,4 +19,4 @@ else
 fi
 
 # Update version and publish via commitizen
-commitizen bump "$@"
+cz bump "$@"
