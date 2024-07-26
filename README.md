@@ -32,6 +32,38 @@ Install package:
 npm i --save-dev '@thelabnyc/standards'
 ```
 
+### Commitlint
+
+Docs: [Commitlint](https://commitlint.js.org/guides/getting-started.html)
+
+Add a file called `.commitlintrc.ts` to your project root with the following content:
+
+```ts
+import type { UserConfig } from "@commitlint/types";
+
+const Configuration: UserConfig = {
+    extends: ["@thelabnyc/standards/commitlint.mjs"],
+};
+export default Configuration;
+```
+
+Use `git log --oneline` to find the short hash of the previous commit and take note of it
+
+Add the following NPM script to package.json:
+
+`"check:lint-commits": "commitlint --from deadbeef"` (where deadbeef is the short hash from the previous step)
+
+Add the new script to `package.json`, then add a call to `check:lint` in the `check` NPM script.
+
+```json
+{
+   "scripts": {
+      "check:lint-commits": "commitlint --from deadbeef"
+      "check:lint": "npm run check:lint-commits && npm run check:lint-css && npm run check:lint-js && npm run check:lint-markdown"
+   }
+}
+```
+
 ### EditorConfig
 
 Docs: [EditorConfig](https://editorconfig.org/)

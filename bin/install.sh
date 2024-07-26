@@ -17,6 +17,16 @@ do
     ln -f -s "./node_modules/@thelabnyc/standards/$SYMLINK" "$SYMLINK"
 done
 
+# Setup commitlint
+cat > ".commitlintrc.ts"<< EOF
+import type { UserConfig } from "@commitlint/types";
+
+const Configuration: UserConfig = {
+    extends: ["@thelabnyc/standards/commitlint.mjs"],
+};
+export default Configuration;
+EOF
+
 # Setup Prettier
 cat > "prettier.config.js"<< EOF
 const base = require("@thelabnyc/standards/prettier.config");
