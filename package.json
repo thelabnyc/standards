@@ -1,6 +1,6 @@
 {
   "name": "@thelabnyc/standards",
-  "version": "0.3.0-b1",
+  "version": "0.3.0-b2",
   "description": "Standardization utilities for thelabnyc projects",
   "scripts": {
     "build": "tsc",

@@ -1,5 +1,11 @@
 # Changes
 
+## v0.3.0-b2 (2024-07-26)
+
+### Fix
+
+-   allow bump: prefix in commits
+
 ## v0.3.0-b1 (2024-07-26)
 
 ## v0.3.0-b0 (2024-07-26)
