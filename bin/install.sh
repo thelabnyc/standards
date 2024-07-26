@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -euxo pipefail
 
 # Make sure we're in the right directory.
 if [ ! -f "./package.json" ]; then
@@ -16,6 +16,16 @@ for SYMLINK in ".editorconfig" ".markdownlint.json"
 do
     ln -f -s "./node_modules/@thelabnyc/standards/$SYMLINK" "$SYMLINK"
 done
+
+# Setup commitlint
+cat > ".commitlintrc.ts"<< EOF
+import type { UserConfig } from "@commitlint/types";
+
+const Configuration: UserConfig = {
+    extends: ["@thelabnyc/standards/commitlint.mjs"],
+};
+export default Configuration;
+EOF
 
 # Setup Prettier
 cat > "prettier.config.js"<< EOF

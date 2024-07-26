@@ -1,6 +1,12 @@
 *.js
 *.d.ts
 
+*.cjs
+*.d.cts
+
+*.mjs
+*.d.mts
+
 # Created by https://www.toptal.com/developers/gitignore/api/python,node,osx
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,node,osx
 
