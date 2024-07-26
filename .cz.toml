@@ -1,7 +1,12 @@
 [tool.commitizen]
 name = "cz_conventional_commits"
-tag_format = "v$version"
-version_scheme = "semver"
-version_provider = "npm"
-update_changelog_on_bump = true
+annotated_tag = true
+gpg_sign = true
 major_version_zero = true
+tag_format = "v$version"
+update_changelog_on_bump = true
+version_provider = "npm"
+version_scheme = "semver"
+pre_bump_hooks = [
+  "pre-commit run --all-files"
+]
