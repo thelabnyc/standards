@@ -1,13 +1,17 @@
 # Changes
 
-## Unreleased
+## v0.3.0-b0 (2024-07-26)
 
 ### Feat
 
--   add commitizen config
+-   add commitizen config (#26817)
+-   add commitlint config (#26817)
 
 ### Fix
 
+-   **deps**: update typescript-eslint monorepo to ^7.17.0
+-   **deps**: update dependency eslint-plugin-react to ^7.35.0
+-   **deps**: update typescript-eslint monorepo to ^7.16.1
 -   **deps**: update dependency eslint-plugin-react to ^7.34.4
 -   **deps**: update dependency stylelint to ^16.7.0
 -   **deps**: update dependency stylelint-scss to ^6.4.1
