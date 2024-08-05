@@ -1,5 +1,11 @@
 # Changes
 
+## v0.3.2 (2024-08-05)
+
+### Fix
+
+-   revert CI_COMMIT_BEFORE_SHA change since it breaks w/ tag pipelines
+
 ## v0.3.1 (2024-08-05)
 
 ### Fix
