@@ -1,5 +1,13 @@
 # Changes
 
+## v0.3.0 (2024-08-05)
+
+### Fix
+
+-   remove empty string from valid prefix list
+-   **deps**: update typescript-eslint monorepo to ^7.18.0
+-   **deps**: update dependency stylelint to ^16.8.1
+
 ## v0.3.0-b2 (2024-07-26)
 
 ### Fix
