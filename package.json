@@ -4,7 +4,7 @@
   "description": "Standardization utilities for thelabnyc projects",
   "scripts": {
     "build": "tsc",
-    "check:lint-commits": "commitlint --from ${CI_MERGE_REQUEST_DIFF_BASE_SHA:-origin/master}",
+    "check:lint-commits": "commitlint --from ${CI_MERGE_REQUEST_DIFF_BASE_SHA:-HEAD~10}",
     "check:lint-js": "eslint -c .eslintrc.json --ext .ts --ext .tsx .",
     "check": "npm run check:lint-commits && npm run check:lint-js",
     "prepack": "npm run build"
