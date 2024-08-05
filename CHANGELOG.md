@@ -1,5 +1,11 @@
 # Changes
 
+## v0.3.3 (2024-08-05)
+
+### Fix
+
+-   always run commitlint on at least one commit
+
 ## v0.3.2 (2024-08-05)
 
 ### Fix
