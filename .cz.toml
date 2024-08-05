@@ -5,6 +5,7 @@ gpg_sign = true
 major_version_zero = true
 tag_format = "v$version"
 update_changelog_on_bump = true
+changelog_merge_prerelease = true
 version_provider = "npm"
 version_scheme = "semver"
 pre_bump_hooks = [
