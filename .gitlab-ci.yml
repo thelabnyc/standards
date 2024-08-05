@@ -29,7 +29,7 @@ lint:
   needs: []
   script:
     - npm run build
-    - npm run lint
+    - npm run check
     - pip3 install pre-commit
     - pre-commit run --all-files
   cache:

@@ -57,10 +57,10 @@ Add the new script to `package.json`, then add a call to `check:lint` in the `ch
 
 ```json
 {
-   "scripts": {
-      "check:lint-commits": "commitlint --from deadbeef"
-      "check:lint": "npm run check:lint-commits && npm run check:lint-css && npm run check:lint-js && npm run check:lint-markdown"
-   }
+    "scripts": {
+        "check:lint-commits": "commitlint --from ${CI_MERGE_REQUEST_DIFF_BASE_SHA:-origin/master}",
+        "check:lint": "npm run check:lint-commits && npm run check:lint-css && npm run check:lint-js && npm run check:lint-markdown"
+    }
 }
 ```
 

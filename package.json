@@ -4,7 +4,9 @@
   "description": "Standardization utilities for thelabnyc projects",
   "scripts": {
     "build": "tsc",
-    "lint": "commitlint --from 2f34182 && eslint -c .eslintrc.json --ext .ts --ext .tsx .",
+    "check:lint-commits": "commitlint --from ${CI_MERGE_REQUEST_DIFF_BASE_SHA:-origin/master}",
+    "check:lint-js": "eslint -c .eslintrc.json --ext .ts --ext .tsx .",
+    "check": "npm run check:lint-commits && npm run check:lint-js",
     "prepack": "npm run build"
   },
   "author": "thelab <thelabdev@thelab.co>",
