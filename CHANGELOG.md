@@ -1,5 +1,12 @@
 # Changes
 
+## v0.3.1 (2024-08-05)
+
+### Fix
+
+-   use CI_COMMIT_BEFORE_SHA if it exists
+-   run commit lint on fewer commits
+
 ## v0.3.0 (2024-08-05)
 
 ### Fix
