@@ -1,7 +1,7 @@
 import type { UserConfig } from "@commitlint/types";
 import { RuleConfigSeverity } from "@commitlint/types";
 
-export const VALID_PREFIXES = ["Merge", "Revert", ""] as const;
+export const VALID_PREFIXES = ["Merge", "Revert"] as const;
 
 export const Configuration: UserConfig = {
     extends: ["@commitlint/config-conventional"],
