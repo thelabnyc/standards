@@ -1,5 +1,23 @@
 # Changes
 
+## v0.3.4 (2024-09-19)
+
+### Fix
+
+-   **deps**: update dependency stylelint-scss to ^6.7.0
+-   **deps**: update dependency stylelint-scss to ^6.6.0
+-   **deps**: update dependency eslint-plugin-react to ^7.36.1
+-   **deps**: update commitlint monorepo to ^19.5.0
+-   **deps**: update dependency eslint-plugin-react to ^7.35.2
+-   **deps**: update eslint
+-   **deps**: update dependency stylelint to ^16.9.0
+-   **deps**: update commitlint monorepo to ^19.4.1
+-   **deps**: update dependency eslint-import-resolver-typescript to ^3.6.3
+-   **deps**: update dependency stylelint-scss to ^6.5.1
+-   **deps**: update dependency stylelint to ^16.8.2
+-   **deps**: update dependency @commitlint/cli to ^19.4.0
+-   **deps**: update dependency stylelint-scss to ^6.5.0
+
 ## v0.3.3 (2024-08-05)
 
 ### Fix
