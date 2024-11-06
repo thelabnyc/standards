@@ -1,5 +1,22 @@
 # Changes
 
+## v0.4.0 (2024-11-06)
+
+### Feat
+
+-   upgrade to eslint 9
+
+### Fix
+
+-   **deps**: update dependency eslint-plugin-react to ^7.37.2
+-   **deps**: update dependency stylelint-scss to ^6.8.1
+-   **deps**: update dependency stylelint to ^16.10.0
+-   **deps**: update dependency eslint-plugin-import to ^2.31.0
+-   **deps**: update dependency eslint-plugin-react to ^7.37.1
+-   **deps**: update dependency eslint-plugin-react to ^7.37.0
+-   **deps**: update dependency markdownlint-cli to ^0.42.0
+-   **deps**: update dependency eslint to ^8.57.1
+
 ## v0.3.4 (2024-09-19)
 
 ### Fix
