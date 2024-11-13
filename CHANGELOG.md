@@ -1,5 +1,11 @@
 # Changes
 
+## v0.4.1 (2024-11-13)
+
+### Fix
+
+-   resolve 'Cannot find namespace 'tseslint'. Did you mean 'TSESLint'?'
+
 ## v0.4.0 (2024-11-06)
 
 ### Feat
