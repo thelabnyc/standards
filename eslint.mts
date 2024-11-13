@@ -9,6 +9,7 @@ import reactPlugin from "eslint-plugin-react";
 // @ts-ignore
 import hooksPlugin from "eslint-plugin-react-hooks";
 import unusedImports from "eslint-plugin-unused-imports";
+import type { ConfigWithExtends } from "typescript-eslint";
 import tseslint from "typescript-eslint";
 
 /* eslint-enable @typescript-eslint/ban-ts-comment */
@@ -141,7 +142,7 @@ export const getTSConfig = ({
     parserOptions: Partial<TSESLint.FlatConfig.ParserOptions> & {
         tsconfigRootDir: string;
     };
-    configs: tseslint.ConfigWithExtends[];
+    configs: ConfigWithExtends[];
 }): ReturnType<typeof tseslint.config> => {
     return tseslint.config(
         ...recommended,
