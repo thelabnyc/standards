@@ -120,9 +120,7 @@ export const configs = {
 export const recommended: TSESLint.FlatConfig.Config[] = [
     configs.ignores,
     eslint.configs.recommended,
-    ...(reactPlugin.configs.flat
-        ? [reactPlugin.configs.flat.recommended as TSESLint.FlatConfig.Config]
-        : []),
+    reactPlugin.configs.flat.recommended,
     configs.reactHooksRecommended,
     ...tseslint.configs.recommendedTypeChecked,
     eslintConfigPrettier,
