@@ -1,7 +1,6 @@
 import eslint from "@eslint/js";
 import type { TSESLint } from "@typescript-eslint/utils";
 import eslintConfigPrettier from "eslint-config-prettier";
-
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-ignore
 import importPlugin from "eslint-plugin-import";
