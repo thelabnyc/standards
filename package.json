@@ -20,8 +20,8 @@
     "install-thelab-standards": "./bin/install.sh"
   },
   "dependencies": {
-    "@commitlint/cli": "^19.6.1",
-    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
     "@eslint/js": "^9.19.0",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "eslint": "^9.19.0",
