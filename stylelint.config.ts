@@ -20,6 +20,7 @@ const config: Config = {
                 "stylelint-config-css-modules",
             ],
             rules: {
+                "scss/dollar-variable-colon-space-after": null,
                 "scss/dollar-variable-empty-line-before": null,
                 "scss/no-global-function-names": null,
             },
