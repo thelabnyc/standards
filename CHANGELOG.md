@@ -1,5 +1,62 @@
 # Changes
 
+## v0.4.2 (2025-02-13)
+
+### Fix
+
+- stylelint compat with prettier 3.5.0
+- **deps**: update dependency typescript-eslint to ^8.24.0
+- **deps**: update dependency prettier to ^3.5.0
+- **deps**: update eslint monorepo to ^9.20.0
+- **deps**: update dependency typescript-eslint to ^8.23.0
+- **deps**: update commitlint monorepo to ^19.7.1
+- **deps**: update dependency stylelint-scss to ^6.11.0
+- **deps**: update dependency @trivago/prettier-plugin-sort-imports to ^5.2.2
+- **deps**: update dependency typescript-eslint to ^8.22.0
+- **deps**: update dependency stylelint to ^16.14.1
+- **deps**: update dependency stylelint to ^16.14.0
+- **deps**: update eslint monorepo to ^9.19.0
+- **deps**: update dependency markdownlint-cli to ^0.44.0
+- **deps**: update dependency typescript-eslint to ^8.21.0
+- **deps**: update dependency stylelint-scss to ^6.10.1
+- **deps**: update dependency eslint-config-prettier to v10
+- **deps**: update dependency stylelint to ^16.13.2
+- **deps**: update dependency stylelint to ^16.13.1
+- **deps**: update dependency typescript-eslint to ^8.20.0
+- **deps**: update dependency eslint-plugin-react to ^7.37.4
+- **deps**: update dependency stylelint-config-standard-scss to v14
+- **deps**: update dependency @trivago/prettier-plugin-sort-imports to v5
+- **deps**: update dependency stylelint-config-standard to v37
+- lint
+- **deps**: update dependency stylelint to ^16.13.0
+- **deps**: update eslint monorepo to ^9.18.0
+- **deps**: update dependency typescript-eslint to ^8.19.1
+- **deps**: update dependency typescript-eslint to ^8.19.0
+- **deps**: update dependency eslint-plugin-react to ^7.37.3
+- **deps**: update dependency typescript-eslint to ^8.18.2
+- **deps**: update dependency typescript-eslint to ^8.18.1
+- **deps**: update dependency stylelint to ^16.12.0
+- **deps**: update dependency @commitlint/cli to ^19.6.1
+- **deps**: update eslint monorepo to ^9.17.0
+- **deps**: update dependency typescript-eslint to ^8.18.0
+- **deps**: update dependency eslint-plugin-react-hooks to ^5.1.0
+- **deps**: update dependency prettier to ^3.4.2
+- **deps**: update dependency eslint-import-resolver-typescript to ^3.7.0
+- **deps**: update dependency typescript-eslint to ^8.17.0
+- **deps**: update eslint monorepo to ^9.16.0
+- **deps**: update dependency stylelint to ^16.11.0
+- **deps**: update dependency prettier to ^3.4.1
+- **deps**: update dependency prettier to ^3.4.0
+- **deps**: update dependency typescript-eslint to ^8.16.0
+- **deps**: update dependency markdownlint-cli to ^0.43.0
+- **deps**: update dependency stylelint-scss to ^6.10.0
+- **deps**: update commitlint monorepo to ^19.6.0
+- **deps**: update dependency typescript-eslint to ^8.15.0
+- **deps**: update dependency eslint to ^9.15.0
+- **deps**: update dependency @eslint/js to ^9.15.0
+- **deps**: update dependency stylelint-scss to ^6.9.0
+- **deps**: update dependency typescript-eslint to ^8.14.0
+
 ## v0.4.1 (2024-11-13)
 
 ### Fix
