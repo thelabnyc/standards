@@ -5,8 +5,7 @@ import eslintConfigPrettier from "eslint-config-prettier";
 // @ts-ignore
 import importPlugin from "eslint-plugin-import";
 import reactPlugin from "eslint-plugin-react";
-// @ts-ignore
-import hooksPlugin from "eslint-plugin-react-hooks";
+import * as hooksPlugin from "eslint-plugin-react-hooks";
 import unusedImports from "eslint-plugin-unused-imports";
 import type { ConfigWithExtends } from "typescript-eslint";
 import tseslint from "typescript-eslint";
@@ -24,12 +23,10 @@ export const configs = {
 
     reactHooksRecommended: {
         plugins: {
-            /* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */
             "react-hooks": hooksPlugin,
         },
-        /* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */
+
         rules: {
-            /* eslint-disable-next-line @typescript-eslint/no-unsafe-member-access */
             ...hooksPlugin.configs.recommended.rules,
         },
     },
