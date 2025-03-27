@@ -78,14 +78,24 @@ ln -s ./node_modules/@thelabnyc/standards/.editorconfig .editorconfig
 
 Docs: [ESLint](https://eslint.org/)
 
-Add an ESLint config file that extends `@thelabnyc/standards/eslintrc.js`.
+Add an ESLint config file that extends `@thelabnyc/standards/eslint.mjs`.
 
-Example `.eslintrc.json`:
+Example `eslint.config.mjs`:
 
-```json
-{
-    "extends": ["./node_modules/@thelabnyc/standards/eslintrc.js"]
-}
+```js
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+import { getTSConfig } from "@thelabnyc/standards/eslint.mjs";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default getTSConfig({
+    parserOptions: {
+        tsconfigRootDir: __dirname,
+    },
+});
 ```
 
 ### Markdownlint
