@@ -54,7 +54,7 @@ release:js:
 
 release:gitlab:
   <<: *release_job
-  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  image: registry.gitlab.com/gitlab-org/release-cli:latest@sha256:3dd33fd2ba4aa507dea3bf7327697c20fd3c59a67512584af259069686067ffe
   script:
     - echo 'noop'
   release:
