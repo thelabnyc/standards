@@ -10,7 +10,7 @@ stages:
   - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
 
 .base_job: &base_job
-  image: registry.gitlab.com/thelabnyc/python:py313-node20@sha256:aca5b3d7ad8b98bd5f74b71d9988661185a266f0253d85ff5b0e5c9c27f1d78a
+  image: registry.gitlab.com/thelabnyc/python:py313-node20@sha256:b9cf54bd62c044d47604597ce97bc0771013c4ba2877381477b46bf752b59427
   before_script:
     - npm ci
   variables:
