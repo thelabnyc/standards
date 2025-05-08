@@ -44,7 +44,7 @@
   "devDependencies": {
     "@tsconfig/node20": "20.1.5",
     "@types/eslint-config-prettier": "^6.11.3",
-    "@types/node": "22.15.3",
+    "@types/node": "22.15.6",
     "typescript": "5.8.3"
   }
 }
