@@ -2,7 +2,10 @@ import { Config } from "stylelint";
 
 const config: Config = {
     customSyntax: "postcss-scss",
-    plugins: ["stylelint-scss", "@thelabnyc/standards/rules/stylelint"],
+    plugins: [
+        "stylelint-config-standard-scss",
+        "@thelabnyc/standards/rules/stylelint",
+    ],
     rules: {
         // Built-in rule tweaks
         "media-feature-range-notation": null,
@@ -20,8 +23,6 @@ const config: Config = {
                 "stylelint-config-css-modules",
             ],
             rules: {
-                "scss/dollar-variable-colon-space-after": null,
-                "scss/dollar-variable-empty-line-before": null,
                 "scss/no-global-function-names": null,
             },
         },
