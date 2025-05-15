@@ -1,5 +1,61 @@
 # Changes
 
+## v0.4.3 (2025-05-15)
+
+### Fix
+
+- use modern stylelint config
+- update docker image tag format
+- **deps**: update dependency stylelint-config-standard to v38
+- **deps**: update dependency typescript-eslint to ^8.31.0
+- **deps**: update dependency eslint to ^9.25.1
+- **deps**: update dependency eslint-import-resolver-typescript to ^4.3.4
+- **deps**: update dependency @eslint/js to ^9.25.1
+- **deps**: update dependency eslint-import-resolver-typescript to ^4.3.3
+- **deps**: update eslint monorepo to ^9.25.0
+- **deps**: update dependency typescript-eslint to ^8.30.1
+- **deps**: update dependency eslint-config-prettier to ^10.1.2
+- **deps**: update dependency typescript-eslint to ^8.29.1
+- **deps**: update dependency eslint-import-resolver-typescript to ^4.3.2
+- **deps**: update dependency stylelint to ^16.18.0
+- **deps**: update eslint monorepo to ^9.24.0
+- **deps**: update dependency eslint-plugin-react to ^7.37.5
+- **deps**: update dependency typescript-eslint to ^8.29.0
+- **deps**: update dependency eslint-import-resolver-typescript to ^4.3.1
+- **deps**: update dependency eslint-import-resolver-typescript to ^4.2.7
+- **deps**: update dependency stylelint to ^16.17.0
+- **deps**: update dependency eslint-import-resolver-typescript to ^4.2.5
+- **deps**: update dependency eslint-import-resolver-typescript to ^4.2.3
+- **deps**: update eslint
+- **deps**: update dependency typescript-eslint to ^8.28.0
+- **deps**: update eslint monorepo to ^9.23.0
+- **deps**: update dependency typescript-eslint to ^8.27.0
+- **deps**: update dependency eslint-import-resolver-typescript to ^3.9.1
+- **deps**: update dependency eslint-import-resolver-typescript to ^3.9.0
+- **deps**: update dependency stylelint to ^16.16.0
+- **deps**: update dependency eslint-import-resolver-typescript to ^3.8.7
+- **deps**: update dependency typescript-eslint to ^8.26.1
+- **deps**: update dependency eslint-import-resolver-typescript to ^3.8.4
+- **deps**: update eslint monorepo to ^9.22.0
+- **deps**: update commitlint monorepo to ^19.8.0
+- **deps**: update dependency eslint-config-prettier to ^10.1.1
+- **deps**: update dependency eslint-plugin-react-hooks to ^5.2.0
+- **deps**: update dependency typescript-eslint to ^8.26.0
+- **deps**: update dependency prettier to ^3.5.3
+- **deps**: update dependency stylelint to ^16.15.0
+- **deps**: update dependency eslint-config-prettier to ^10.0.2
+- **deps**: update dependency typescript-eslint to ^8.25.0
+- **deps**: update dependency stylelint-scss to ^6.11.1
+- **deps**: update dependency prettier to ^3.5.2
+- **deps**: update eslint monorepo to ^9.21.0
+- **deps**: update dependency eslint-import-resolver-typescript to ^3.8.3
+- **deps**: update dependency eslint-import-resolver-typescript to ^3.8.2
+- **deps**: update dependency typescript-eslint to ^8.24.1
+- **deps**: update dependency eslint-import-resolver-typescript to ^3.8.1
+- **deps**: update dependency eslint-import-resolver-typescript to ^3.8.0
+- **deps**: update dependency prettier to ^3.5.1
+- **deps**: update dependency eslint to ^9.20.1
+
 ## v0.4.2 (2025-02-13)
 
 ### Fix
