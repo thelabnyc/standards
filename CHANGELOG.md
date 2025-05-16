@@ -1,5 +1,11 @@
 # Changes
 
+## v0.4.4 (2025-05-16)
+
+### Fix
+
+- modern stylelint
+
 ## v0.4.3 (2025-05-15)
 
 ### Fix
