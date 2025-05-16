@@ -1,11 +1,11 @@
 import { Config } from "stylelint";
 
 const config: Config = {
-    customSyntax: "postcss-scss",
-    plugins: [
+    extends: [
         "stylelint-config-standard-scss",
-        "@thelabnyc/standards/rules/stylelint",
+        "stylelint-config-prettier-scss",
     ],
+    plugins: ["@thelabnyc/standards/rules/stylelint"],
     rules: {
         // Built-in rule tweaks
         "media-feature-range-notation": null,
@@ -14,17 +14,21 @@ const config: Config = {
         "selector-class-pattern": null,
         // Custom Rules
         "thelabnyc/no-composing-sass": true,
+        "scss/dollar-variable-empty-line-before": null,
+        "scss/double-slash-comment-empty-line-before": null,
     },
     overrides: [
         {
-            files: ["**/*.scss"],
+            files: ["**/*.module.scss"],
             extends: [
                 "stylelint-config-standard-scss",
+                "stylelint-config-prettier-scss",
                 "stylelint-config-css-modules",
             ],
-            rules: {
-                "scss/no-global-function-names": null,
-            },
+        },
+        {
+            files: ["**/*.module.css"],
+            extends: ["stylelint-config-css-modules"],
         },
     ],
 };
