@@ -1,5 +1,12 @@
 # Changes
 
+## v0.4.5 (2025-05-23)
+
+### Fix
+
+- mode prettier-plugin-sort-imports to peerDeps to fix import issue
+- **deps**: update dependency markdownlint-cli to ^0.45.0
+
 ## v0.4.4 (2025-05-16)
 
 ### Fix
