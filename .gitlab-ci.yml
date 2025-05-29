@@ -43,7 +43,15 @@ lint:
   needs:
     - lint
 
-release:js:
+release:pkg-npm:
+  <<: *base_job
+  <<: *release_job
+  script:
+    - echo "//registry.npmjs.org/:_authToken=${NPM_PUBLISH_TOKEN}" > .npmrc
+    - npm run build
+    - npm publish --access public
+
+release:pkg-gitlab:
   <<: *base_job
   <<: *release_job
   script:
