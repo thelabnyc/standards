@@ -1,5 +1,11 @@
 # Changes
 
+## v0.4.6 (2025-05-29)
+
+### Fix
+
+- update typescript-eslint
+
 ## v0.4.5 (2025-05-23)
 
 ### Fix
