@@ -1,5 +1,11 @@
 # Changes
 
+## v0.4.7 (2025-06-25)
+
+### Fix
+
+- **deps**: update dependency stylelint-config-standard-scss to v15
+
 ## v0.4.6 (2025-05-29)
 
 ### Fix
