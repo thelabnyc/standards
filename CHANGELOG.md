@@ -1,5 +1,11 @@
 # Changes
 
+## v0.4.8 (2025-08-07)
+
+### Fix
+
+- **deps**: update dependency stylelint-config-standard to v39
+
 ## v0.4.7 (2025-06-25)
 
 ### Fix
