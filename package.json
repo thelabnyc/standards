@@ -12,12 +12,12 @@
   "author": "thelab <thelabdev@thelab.co>",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/thelabnyc/standards"
+    "url": "git+https://gitlab.com/thelabnyc/standards.git"
   },
   "homepage": "https://gitlab.com/thelabnyc/standards",
   "license": "ISC",
   "bin": {
-    "install-thelab-standards": "./bin/install.sh"
+    "install-thelab-standards": "bin/install.sh"
   },
   "peerDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",

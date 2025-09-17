@@ -2,15 +2,19 @@ stages:
   - lint
   - release
 
-.rules_mrs_and_protected:
-  - if: $CI_PIPELINE_SOURCE == "schedule"
-    when: never
-  - if: $CI_COMMIT_BRANCH && $CI_COMMIT_REF_PROTECTED == "true"
-  - if: $CI_COMMIT_TAG && $CI_COMMIT_REF_PROTECTED == "true"
-  - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+variables:
+  # We have to disable sigstore for now since NPM currently only supports
+  # provenance when publishing from a gitlab-hosted runner. Hopefully we can
+  # enable this in the future once they drop this limitation (which should be
+  # possible since PyPI has no such limitation on their use of sigstore).
+  NPM_CONFIG_PROVENANCE: "false"
+
+include:
+  - component: gitlab.com/thelabnyc/thelab-ci-components/publish-gitlab-release@0.5.0
+  - component: gitlab.com/thelabnyc/thelab-ci-components/publish-to-npm@0.5.0
 
 .base_job: &base_job
-  image: registry.gitlab.com/thelabnyc/python:3.13.961-node20@sha256:c63e10644379e04e6763a8969e7023ba5c6798505b3d219464e42faadf701e46
+  image: registry.gitlab.com/thelabnyc/python:3.13.960-node24@sha256:9cb82ee53bc8ad2d7fea12d10f6e3583b6a0924dbaab4bb51b52605396017475
   before_script:
     - npm ci
   variables:
@@ -35,38 +39,3 @@ lint:
   cache:
     paths:
       - ${PRE_COMMIT_HOME}
-
-.release_job: &release_job
-  rules:
-    - if: $CI_COMMIT_TAG && $CI_COMMIT_REF_PROTECTED == "true"
-  stage: release
-  needs:
-    - lint
-
-release:pkg-npm:
-  <<: *base_job
-  <<: *release_job
-  script:
-    - echo "//registry.npmjs.org/:_authToken=${NPM_PUBLISH_TOKEN}" > .npmrc
-    - npm run build
-    - npm publish --access public
-
-release:pkg-gitlab:
-  <<: *base_job
-  <<: *release_job
-  script:
-    - echo "@thelabnyc:registry=https://${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/" > .npmrc
-    - echo "//${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}" >> .npmrc
-    - npm run build
-    - npm publish
-
-release:gitlab:
-  <<: *release_job
-  image: registry.gitlab.com/gitlab-org/release-cli:latest@sha256:3f52d526f48e8d10625c722fa6d6423ee82aadeae1b1aa91f07b62551d96dacf
-  script:
-    - echo 'noop'
-  release:
-    name: "Release $CI_COMMIT_TAG"
-    description: "Release $CI_COMMIT_TAG. Tagged by $GITLAB_USER_LOGIN"
-    tag_name: "$CI_COMMIT_TAG"
-    ref: "$CI_COMMIT_TAG"
