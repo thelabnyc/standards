@@ -77,6 +77,8 @@ export const configs = {
             // React overrides
             "react/prop-types": "off",
             "react/display-name": "off",
+            // Typescript covers this and it doesn't understand react-three-fiber elements
+            "react/no-unknown-property": "off",
             // We use empty arrays to run once, etc.
             "react-hooks/exhaustive-deps": "off",
 
