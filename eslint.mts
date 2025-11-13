@@ -1,16 +1,12 @@
 import eslint from "@eslint/js";
 import type { TSESLint } from "@typescript-eslint/utils";
 import eslintConfigPrettier from "eslint-config-prettier";
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-// @ts-ignore
 import importPlugin from "eslint-plugin-import";
 import reactPlugin from "eslint-plugin-react";
 import * as hooksPlugin from "eslint-plugin-react-hooks";
 import unusedImports from "eslint-plugin-unused-imports";
 import type { ConfigWithExtends } from "typescript-eslint";
 import tseslint from "typescript-eslint";
-
-/* eslint-enable @typescript-eslint/ban-ts-comment */
 
 export type FlatConfigs = {
     [t: string]: TSESLint.FlatConfig.Config;
@@ -122,11 +118,9 @@ export const recommended: TSESLint.FlatConfig.Config[] = [
     configs.reactHooksRecommended,
     ...tseslint.configs.recommendedTypeChecked,
     eslintConfigPrettier,
-    /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-    importPlugin.flatConfigs.typescript as TSESLint.FlatConfig.Config,
-    importPlugin.flatConfigs.errors as TSESLint.FlatConfig.Config,
-    importPlugin.flatConfigs.warnings as TSESLint.FlatConfig.Config,
-    /* eslint-enable @typescript-eslint/no-unsafe-member-access */
+    importPlugin.flatConfigs.typescript,
+    importPlugin.flatConfigs.errors,
+    importPlugin.flatConfigs.warnings,
     configs.unusedImportsRecommended,
     configs.thelabRecommended,
 ];
@@ -145,7 +139,6 @@ export const getTSConfig = ({
         {
             languageOptions: {
                 parserOptions: {
-                    project: ["./tsconfig.json"],
                     projectService: true,
                     ...parserOptions,
                 },
