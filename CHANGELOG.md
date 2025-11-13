@@ -1,5 +1,15 @@
 # Changes
 
+## v0.5.0 (2025-11-13)
+
+### Feat
+
+- disable redundant "react/no-unknown-property" eslint rule
+
+### Fix
+
+- eslint project / projectService conflict
+
 ## v0.4.9 (2025-09-17)
 
 ## v0.4.8 (2025-08-07)
