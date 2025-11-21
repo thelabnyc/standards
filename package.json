@@ -44,7 +44,7 @@
     "typescript-eslint": "^8.39.0"
   },
   "devDependencies": {
-    "@tsconfig/node20": "20.1.7",
+    "@tsconfig/node20": "20.1.8",
     "@types/eslint-config-prettier": "^6.11.3",
     "@types/node": "22.19.1",
     "typescript": "5.9.3"
