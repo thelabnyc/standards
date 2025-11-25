@@ -16,6 +16,7 @@ const config: Config = {
         "thelabnyc/no-composing-sass": true,
         "scss/dollar-variable-empty-line-before": null,
         "scss/double-slash-comment-empty-line-before": null,
+        "at-rule-empty-line-before": null,
     },
     overrides: [
         {
