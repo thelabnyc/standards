@@ -34,7 +34,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.0",
     "eslint-plugin-unused-imports": "^4.1.4",
-    "markdownlint-cli": "^0.46.0",
+    "markdownlint-cli": "^0.47.0",
     "postcss-scss": "^4.0.9",
     "stylelint": "^16.18.0",
     "stylelint-config-css-modules": "^4.4.0",
