@@ -10,9 +10,9 @@ variables:
   NPM_CONFIG_PROVENANCE: "false"
 
 include:
-  - component: gitlab.com/thelabnyc/thelab-ci-components/precommit@0.8.3
-  - component: gitlab.com/thelabnyc/thelab-ci-components/publish-gitlab-release@0.8.3
-  - component: gitlab.com/thelabnyc/thelab-ci-components/publish-to-npm@0.8.3
+  - component: gitlab.com/thelabnyc/thelab-ci-components/precommit@0.8.4
+  - component: gitlab.com/thelabnyc/thelab-ci-components/publish-gitlab-release@0.8.4
+  - component: gitlab.com/thelabnyc/thelab-ci-components/publish-to-npm@0.8.4
 
 .base_job: &base_job
   image: registry.gitlab.com/thelabnyc/python:3.14-node24@sha256:cf65edf6bbe1644cc66d1c8d7d09033bb9407b7ecfd233daa1e322af0e0a4967
