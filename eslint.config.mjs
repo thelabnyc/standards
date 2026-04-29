@@ -1,17 +1,12 @@
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-
 import { getTSConfig } from "./eslint.mjs";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 export default getTSConfig({
     parserOptions: {
         projectService: {
             allowDefaultProject: ["*.js", "*.cjs", "*.mjs"],
         },
-        tsconfigRootDir: __dirname,
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+        tsconfigRootDir: import.meta.dirname,
     },
     configs: [
         {
