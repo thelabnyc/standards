@@ -25,8 +25,7 @@ npm run check:lint-commits
 npm run check:lint-js
 
 # Run pre-commit hooks on all files
-pip3 install pre-commit
-pre-commit run --all-files
+prek run --all-files
 
 # Prepare for publishing (runs build automatically)
 npm run prepack
@@ -105,8 +104,7 @@ The GitLab CI pipeline (`.gitlab-ci.yml`) has two stages:
 
 - Runs on MRs, protected branches, and tags
 - Uses TheLab Python Docker image (includes Node.js)
-- Executes: `npm run build`, `npm run check`, and `pre-commit run --all-files`
-- Caches pre-commit hooks in `.cache/pre-commit`
+- Executes: `npm run build`, `npm run check`, and `prek run --all-files`
 
 ### release stage
 
