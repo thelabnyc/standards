@@ -1,5 +1,17 @@
 # Changes
 
+## v0.5.1 (2026-04-30)
+
+### Fix
+
+- **deps**: update dependency stylelint to v17
+- **deps**: update dependency markdownlint-cli to ^0.48.0
+- **deps**: update dependency markdownlint-cli to ^0.47.0
+- **deps**: update dependency stylelint-config-standard-scss to v16
+- **deps**: update dependency eslint-plugin-react-hooks to v7
+- **deps**: update commitlint monorepo to v20
+- **deps**: update dependency markdownlint-cli to ^0.46.0
+
 ## v0.5.0 (2025-11-13)
 
 ### Feat
