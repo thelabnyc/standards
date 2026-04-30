@@ -1,5 +1,6 @@
 stages:
   - lint
+  - test
   - release
 
 variables:
@@ -10,6 +11,7 @@ variables:
   NPM_CONFIG_PROVENANCE: "false"
 
 include:
+  - component: gitlab.com/thelabnyc/thelab-ci-components/review@0.8.4
   - component: gitlab.com/thelabnyc/thelab-ci-components/precommit@0.8.4
   - component: gitlab.com/thelabnyc/thelab-ci-components/publish-gitlab-release@0.8.4
   - component: gitlab.com/thelabnyc/thelab-ci-components/publish-to-npm@0.8.4
