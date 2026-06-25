@@ -17,7 +17,7 @@ include:
   - component: gitlab.com/thelabnyc/thelab-ci-components/publish-to-npm@0.9.0
 
 .base_job: &base_job
-  image: registry.gitlab.com/thelabnyc/python:3.14-node24@sha256:7601752416f4c91307b090d37b532615ce06a8e25435305a5efc1f99c5ef8ac8
+  image: registry.gitlab.com/thelabnyc/python:3.14-node24@sha256:a57a6e5d0c7c2b01a5ee125cbb7531073a8e1307ea2c4fa0919bcde3282f278e
   before_script:
     - npm ci
   variables:
