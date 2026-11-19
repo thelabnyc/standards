@@ -15,7 +15,7 @@ npm ci
 # Build TypeScript files (compiles .mts source to .mjs output)
 npm run build
 
-# Run all checks (commit messages + ESLint)
+# Run all checks (commit messages + ESLint + Oxlint)
 npm run check
 
 # Lint commit messages (from CI_MERGE_REQUEST_DIFF_BASE_SHA or last 10 commits)
@@ -23,6 +23,9 @@ npm run check:lint-commits
 
 # Lint JavaScript/TypeScript with ESLint
 npm run check:lint-js
+
+# Lint JavaScript/TypeScript with this package's own Oxlint config
+npm run check:lint-oxlint
 
 # Run pre-commit hooks on all files
 prek run --all-files
@@ -39,6 +42,7 @@ This package provides configuration files that are consumed by other projects:
 
 - **commitlint.mts/.mjs** - Commitlint configuration with conventional commit types
 - **eslint.mts/.mjs** - ESLint flat config with TypeScript, React, and import rules
+- **oxlint.mts/.mjs** - Oxlint config for projects that use Oxlint instead of ESLint: Oxlint's `correctness` rules plus our own picks from the ESLint config
 - **prettier.config.ts/.js** - Prettier configuration with import sorting
 - **stylelint.config.ts/.js** - Stylelint configuration for SCSS and CSS modules
 - **.editorconfig** - Editor configuration
@@ -95,6 +99,7 @@ When `npx install-thelab-standards` runs, it:
 1. Installs `@thelabnyc/standards` as devDependency
 2. Symlinks `.editorconfig` and `.markdownlint.json` from node_modules
 3. Creates `.commitlintrc.ts`, `prettier.config.js`, `eslint.config.mjs`, and `.stylelintrc.json` that extend this package's configs
+4. With `--oxlint`, creates `oxlint.config.mts` instead of `eslint.config.mjs`
 
 ## CI/CD Pipeline
 
