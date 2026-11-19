@@ -132,7 +132,7 @@ export const getTSConfig = ({
     parserOptions: Partial<TSESLint.FlatConfig.ParserOptions> & {
         tsconfigRootDir: string;
     };
-    configs: ConfigWithExtends[];
+    configs?: ConfigWithExtends[];
 }): ReturnType<typeof tseslint.config> => {
     return tseslint.config(
         ...recommended,
