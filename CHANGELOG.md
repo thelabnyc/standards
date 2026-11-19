@@ -1,5 +1,18 @@
 # Changes
 
+## v0.6.0 (2026-11-19)
+
+### Feat
+
+- add shared oxlint config
+
+### Fix
+
+- make getTSConfig configs optional
+- **deps**: update dependency markdownlint-cli to ^0.50.0
+- **deps**: update commitlint monorepo to v21
+- **deps**: update dependency markdownlint-cli to ^0.49.0
+
 ## v0.5.1 (2026-04-30)
 
 ### Fix
