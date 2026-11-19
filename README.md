@@ -16,6 +16,12 @@ Run install script. For details of what this script does, see [bin/install.sh](b
 npx --package='@thelabnyc/standards' install-thelab-standards
 ```
 
+To set up [Oxlint](#oxlint) instead of ESLint, pass `--oxlint`:
+
+```bash
+npx --package='@thelabnyc/standards' install-thelab-standards --oxlint
+```
+
 ## Manual Setup
 
 ### Install Package
@@ -96,6 +102,29 @@ export default getTSConfig({
         tsconfigRootDir: __dirname,
     },
 });
+```
+
+### Oxlint
+
+Docs: [Oxlint](https://oxc.rs/docs/guide/usage/linter.html)
+
+Oxlint is a much faster alternative to ESLint. Use one or the other, not both.
+
+The Oxlint config doesn't copy the ESLint config's rules. It turns on Oxlint's `correctness` rules, then adds the type-aware TypeScript rules and our own picks from the ESLint config. New Oxlint versions bring new rules on their own, so the two configs flag different things. Also:
+
+- Oxlint's `no-unused-vars` replaces `eslint-plugin-unused-imports`. To remove unused imports, run `oxlint --fix-suggestions`; a plain `--fix` doesn't.
+- `typescript/no-unnecessary-condition` is still experimental in Oxlint.
+
+Type-aware rules run through `oxlint-tsgolint`, which this package installs. The config file needs Node 22.18+ or 24+.
+
+Add an Oxlint config file built with `getConfig()` from `@thelabnyc/standards/oxlint.mjs`. It takes the same fields as `defineConfig()`, for adding project rules or ignores.
+
+Example `oxlint.config.mts`:
+
+```ts
+import { getConfig } from "@thelabnyc/standards/oxlint.mjs";
+
+export default getConfig();
 ```
 
 ### Markdownlint

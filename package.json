@@ -6,7 +6,8 @@
     "build": "tsc",
     "check:lint-commits": "commitlint --from ${CI_MERGE_REQUEST_DIFF_BASE_SHA:-HEAD~10}",
     "check:lint-js": "eslint .",
-    "check": "npm run check:lint-commits && npm run check:lint-js",
+    "check:lint-oxlint": "oxlint",
+    "check": "npm run check:lint-commits && npm run check:lint-js && npm run check:lint-oxlint",
     "prepack": "npm run build"
   },
   "author": "thelab <thelabdev@thelab.co>",
@@ -35,6 +36,8 @@
     "eslint-plugin-react-hooks": "^7.0.0",
     "eslint-plugin-unused-imports": "^4.1.4",
     "markdownlint-cli": "^0.50.0",
+    "oxlint": "^1.94.0",
+    "oxlint-tsgolint": "^7.0.2007",
     "postcss-scss": "^4.0.9",
     "stylelint": "^17.0.0",
     "stylelint-config-css-modules": "^4.4.0",

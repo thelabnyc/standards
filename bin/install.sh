@@ -2,6 +2,16 @@
 
 set -euxo pipefail
 
+LINTER="eslint"
+case "$#:${1:-}" in
+    "0:") ;;
+    "1:--oxlint") LINTER="oxlint" ;;
+    *)
+        echo "Usage: install-thelab-standards [--oxlint]" >&2
+        exit 1
+        ;;
+esac
+
 # Make sure we're in the right directory.
 if [ ! -f "./package.json" ]; then
     echo "Aborting. File package.json does not exist in directory $(pwd)"
@@ -35,6 +45,14 @@ module.exports = {
 };
 EOF
 
+if [ "$LINTER" = "oxlint" ]; then
+# Setup Oxlint
+cat > "oxlint.config.mts"<< EOF
+import { getConfig } from "@thelabnyc/standards/oxlint.mjs";
+
+export default getConfig();
+EOF
+else
 # Setup ESLint
 cat > "eslint.config.mjs"<< EOF
 import path from "node:path";
@@ -52,6 +70,7 @@ export default getTSConfig({
 });
 
 EOF
+fi
 
 
 # Setup Stylelint
